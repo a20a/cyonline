@@ -1,11 +1,14 @@
 describe('CSSLocators', () =>{
 it("CSSlocator",() =>{
 
-    cy.visit("https://www.otto.de/")
+    cy.visit("https://naveenautomationlabs.com/opencart/")
 
-    cy.get("input[placeholder='Wonach suchst du?']").type("Apple airpods")
+    cy.get("input[placeholder='Search']").type('Apple')
 
-    cy.get("//div[@data-qa-id='search-field-submit']//*[name()='svg']").click
+    cy.get("#search button").click()
+
+   // cy.get(".product-layout:first-child h4:first-of-type a").contains("Apple")
+    
 
 
 })
